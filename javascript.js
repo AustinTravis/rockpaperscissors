@@ -41,7 +41,11 @@ function playRound(playerSelection, computerSelection) {
     return winner;
 }
 
+function game() {
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt("Please inut rock, paper, or scissors.");
+        console.log(playRound(playerSelection, getComputerChoice()));
+    }
+}
 
-let playerSelection = prompt();
-const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+game();
